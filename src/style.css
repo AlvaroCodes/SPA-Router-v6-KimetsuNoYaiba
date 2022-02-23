@@ -75,3 +75,7 @@
 .centrar p span {
     font-size: 1.3em;
 }
+
+.active {
+    color: rgb(196, 152, 31);
+}

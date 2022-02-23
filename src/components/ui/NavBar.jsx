@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import '../../style.css'
 
@@ -8,29 +8,29 @@ export const NavBar = () => {
     <div className='navBar'>
      <h1>AnimeKimetsu</h1>
 
-       <Link
-       className='navBar-link'
+       <NavLink
+       className= { ({isActive})=> 'navBar-link' + (isActive?' active':'')}
        to='/'
        >
         Inicio
-       </Link>
+       </NavLink>
 
        <NavLink
-        className='navBar-link'
+         className= { ({isActive})=> 'navBar-link' + (isActive?' active':'')}
        to='SeasonsOne'
        >
             SeasonsOne
        </NavLink>
 
        <NavLink
-        className='navBar-link'
+         className= { ({isActive})=> 'navBar-link' + (isActive?' active':'')}
        to='SeasonsTwo'
        >
             SeasonsTwo
        </NavLink>
 
        <NavLink
-        className='navBar-link'
+         className= { ({isActive})=> 'navBar-link' + (isActive?' active':'')}
        to='SeasonsThree'
        >
             SeasonsThree
